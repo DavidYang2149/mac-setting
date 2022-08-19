@@ -118,7 +118,9 @@ mkdir modules
 vi inputsource_aurora.lua
 ```
 
-상세 설정은 [다음](https://github.com/DavidYang2149/hammerspoon-config)을 참조한다
+상세 설정은 [다음](https://github.com/DavidYang2149/hammerspoon-config)을 참조한다.
+
+추가로 한영 전환 설정은 [다음](https://www.philgineer.com/2021/01/m1-hammerspoon.html)을 참조한다.
 
 ## Git
 
