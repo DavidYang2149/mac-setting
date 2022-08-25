@@ -12,6 +12,12 @@
 brew intall git
 brew install fnm
 brew install npm
+brew install neovim
+brew install gpg
+brew install gitmoji
+
+brew tap johngrib/homebrew-johngrib
+brew install fav
 ```
 
 ## iTerm2
@@ -28,7 +34,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ```sh
 brew install zsh-syntax-highlighting
-
 brew install zsh-autosuggestions
 ```
 
@@ -87,7 +92,6 @@ Dracula.itermcolors 파일 클릭 후 iTerm2에서 설정 - Colors - Dracula 변
 ### 폰트 설치
 ```sh
 brew tap homebrew/cask-fonts
-
 brew install --cask font-jetbrains-mono
 ```
 
@@ -124,9 +128,9 @@ vi inputsource_aurora.lua
 
 ## Git
 
-(선행조건) brew install git
-
 ```sh
+# 선행조건
+brew install git
 brew install gpg
 ```
 
