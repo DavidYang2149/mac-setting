@@ -18,6 +18,8 @@ brew install gitmoji
 
 brew tap johngrib/homebrew-johngrib
 brew install fav
+
+brew install mongosh
 ```
 
 ## iTerm2
