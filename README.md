@@ -20,6 +20,13 @@ brew tap johngrib/homebrew-johngrib
 brew install fav
 
 brew install mongosh
+
+# node canvas 설치 방법
+npm install -g node-gyp
+brew install pkg-config cairo libpng jpeg giflib
+
+# 이제 필요한 곳에서 하단 canvas를 설치할 수 있다
+# npm install canvas
 ```
 
 ## iTerm2
