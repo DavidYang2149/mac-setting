@@ -4,6 +4,9 @@
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Warning: /opt/homebrew/bin is not in your PATH 메세지가 나타나는 경우
+echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
 ```
 
 ### Homebrew 설정
