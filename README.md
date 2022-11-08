@@ -9,7 +9,7 @@
 ### Homebrew 설정
 
 ```sh
-brew intall git
+brew install git
 brew install fnm
 brew install npm
 brew install neovim
