@@ -122,9 +122,9 @@ touch ~/.config/nvim/init.vim
 
 ## Hammerspoon
 
-Hammersppon을 설치한다.
+Hammerspoon을 설치한다.
 
-이후 `.hammerspoon` 폴더에 다음과 같은 파일을 만든다.
+이후 `.Hammerspoon` 폴더에 다음과 같은 파일을 만든다.
 
 ```sh
 vi init.lua
