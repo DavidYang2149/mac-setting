@@ -126,13 +126,15 @@ prompt_newline() {
 git clone https://github.com/dracula/iterm.git
 ```
 
-Dracula.itermcolors 파일 클릭 후 iTerm2에서 설정 - Profiles - Colors - Dracula 변경
+Dracula.itermcolors 파일 클릭 후, iTerm2에서 설정 - Profiles - Colors - Dracula 변경
 
 ### 폰트 설치
 ```sh
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono
 ```
+
+폰트 설치 완료 후, iTerm2에서 설정 - Profiles - Text - Font - JetBrains Mono 변경
 
 ### neovim
 
