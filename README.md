@@ -151,7 +151,7 @@ touch ~/.config/nvim/init.vim
 
 ## Hammerspoon
 
-Hammerspoon을 설치한다.
+Hammerspoon을 [설치](https://www.hammerspoon.org/)한다.
 
 이후 `.Hammerspoon` 폴더에 다음과 같은 파일을 만든다.
 
