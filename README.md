@@ -126,7 +126,7 @@ prompt_newline() {
 git clone https://github.com/dracula/iterm.git
 ```
 
-Dracula.itermcolors 파일 클릭 후 iTerm2에서 설정 - Colors - Dracula 변경
+Dracula.itermcolors 파일 클릭 후 iTerm2에서 설정 - Profiles - Colors - Dracula 변경
 
 ### 폰트 설치
 ```sh
