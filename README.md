@@ -59,6 +59,33 @@ prompt_context() {
   fi
 }
 
+# zsh Highlighting Setting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# Homebrew PATH
+export PATH=/opt/homebrew/bin:$PATH
+
+# VSCode Setting - Command: code .
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# NEOVIM
+alias vi='nvim'
+# git
+alias gpso='git push --set-upstream origin'
+
+# fnm
+eval "$(fnm env --use-on-cd)"
+
+# gpg
+export GPG_TTY=$(tty)
+
+# fav
+source $(which fav.sh)
+
 ```
 
 ### .oh-my-zsh/themes/agnoster.zsh-theme
@@ -90,34 +117,6 @@ prompt_newline() {
   echo -n "%{%f%}"
   CURRENT_BG=''
 }
-
-# zsh Highlighting Setting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# zsh autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
-# Homebrew PATH
-export PATH=/opt/homebrew/bin:$PATH
-
-# VSCode Setting - Command: code .
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# NEOVIM
-alias vi='nvim'
-# git
-alias gpso='git push --set-upstream origin'
-
-# fnm
-eval "$(fnm env --use-on-cd)"
-
-# gpg
-export GPG_TTY=$(tty)
-
-# fav
-source $(which fav.sh)
-
 ```
 
 ### 드라큘라 테마 설치
