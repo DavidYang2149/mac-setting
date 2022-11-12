@@ -159,9 +159,12 @@ Hammerspoon을 [설치](https://www.hammerspoon.org/)한다.
 cd .Hammerspoon
 vi init.lua
 
+# 직접 설정
 mkdir modules
 # modules
 vi inputsource_aurora.lua
+
+# 혹은 하단 상세 설정을 참조
 ```
 
 상세 설정은 [다음](https://github.com/DavidYang2149/hammerspoon-config)을 참조한다.
