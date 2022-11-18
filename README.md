@@ -136,6 +136,13 @@ brew install --cask font-jetbrains-mono
 
 폰트 설치 완료 후, iTerm2에서 설정 - Profiles - Text - Font - JetBrains Mono 변경
 
+### fnm
+
+```sh
+# 사용법
+# fnm use {버전}
+```
+
 ### neovim
 
 ```sh
