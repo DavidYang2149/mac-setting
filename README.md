@@ -22,6 +22,10 @@ brew install gitmoji
 brew tap johngrib/homebrew-johngrib
 brew install fav
 
+brew install localtunnel
+# localtunnel 사용법 예시
+# lt --port 3000 --subdomain david
+
 brew install mongosh
 
 # node canvas 설치 방법
