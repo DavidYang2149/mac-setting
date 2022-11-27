@@ -163,6 +163,15 @@ mkdir ~/.config/nvim
 touch ~/.config/nvim/init.vim
 ```
 
+### spacevim
+
+설치 및 설정하기
+
+```sh
+curl -sLf https://spacevim.org/install.sh | bash
+# 설치 완료 후 vim 실행 & 에디터로 접속하면 플러그인을 자동 설치한다
+```
+
 ## Hammerspoon
 
 Hammerspoon을 [설치](https://www.hammerspoon.org/)한다.
