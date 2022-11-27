@@ -182,7 +182,10 @@ curl -sLf https://spacevim.org/install.sh | bash
 # 설치 완료 후 vim 실행 & 에디터로 접속하면 플러그인을 자동 설치한다
 ```
 
+에디터를 사용하면서 문제가 생길 경우 vi로 접속하여 다음을 실행해본다.
+
 ```vi
+# vi 접속
 :checkhealth
 ```
 
