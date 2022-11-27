@@ -81,6 +81,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # NEOVIM
 alias vi='nvim'
+alias vim='nvim'
 alias vimdiff='nvim -d'
 export EDITOR='/usr/local/bin/nvim'
 
@@ -95,6 +96,12 @@ export GPG_TTY=$(tty)
 
 # fav
 source $(which fav.sh)
+
+# python
+if which pyenv > /dev/null; then
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+fi
 
 ```
 
@@ -189,6 +196,18 @@ brew upgrade pyenv
  # 버전 확인
 pyenv --version
 ```
+
+이후 `.zshrc`에서 다음과 같이 설정한다.
+
+```sh
+# python
+if which pyenv > /dev/null; then
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+fi
+```
+
+설치 및 버전 관리하기
 
 ```sh
 # 설치 가능한 버전 확인
