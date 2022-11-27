@@ -26,6 +26,9 @@ brew install localtunnel
 # localtunnel 사용법 예시
 # lt --port 3000 --subdomain david
 
+# python 
+brew install pyenv
+
 brew install mongosh
 
 # node canvas 설치 방법
@@ -170,6 +173,38 @@ touch ~/.config/nvim/init.vim
 ```sh
 curl -sLf https://spacevim.org/install.sh | bash
 # 설치 완료 후 vim 실행 & 에디터로 접속하면 플러그인을 자동 설치한다
+```
+
+### python
+
+설정하기
+
+```sh
+ # 설치가 안되었다면 다음과 같이 할 것
+brew install pyenv
+
+ # 업그레이드
+brew upgrade pyenv
+
+ # 버전 확인
+pyenv --version
+```
+
+```sh
+# 설치 가능한 버전 확인
+pyenv install --list
+
+ # 3.10.8 버전 설치
+pyenv install 3.10.8
+
+ # 3.10.8 버전을 사용한다
+pyenv global 3.10.8
+
+ # 3.10.8 버전 삭제
+pyenv uninstall 3.10.8
+
+ # 설치된 버전들 확인
+pyenv versions
 ```
 
 ## Hammerspoon
