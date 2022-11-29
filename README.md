@@ -85,7 +85,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
-export EDITOR='/usr/local/bin/nvim'
+export EDITOR='/usr/bin/vim'
 
 # git
 alias gpso='git push --set-upstream origin'
