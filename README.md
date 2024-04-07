@@ -39,6 +39,13 @@ brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
 
 # 이제 필요한 곳에서 하단 canvas를 설치할 수 있다
 # npm install canvas
+
+# Flutter Version Manager
+brew tap leoafarias/fvm
+brew install leoafarias/fvm/fvm
+
+# fvm 활성화
+dart pub global activate fvm
 ```
 
 ## iTerm2
@@ -105,6 +112,11 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)"
 fi
 
+# fvm (Flutter Version Manager)
+export PATH="$PATH":"$HOME/fvm/default/bin"
+export PATH="$PATH":"$HOME/development/flutter/bin"
+export PATH="$PATH":"$HOME/bin/cache/dart-sdk/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 ```
 
 ### .oh-my-zsh/themes/agnoster.zsh-theme
@@ -154,6 +166,32 @@ brew install --cask font-jetbrains-mono
 ```
 
 폰트 설치 완료 후, iTerm2에서 설정 - Profiles - Text - Font - JetBrains Mono 변경
+
+### fvm
+
+```sh
+# 사용법
+# 현재 설치된 플러터 버전리스트 확인
+fvm list
+
+# 현재 사용중인 플러터 버전 확인
+fvm flutter --version
+
+# 플러터 버전 설치하기
+fvm install {version}
+
+# 특정 버전 플러터 사용
+fvm use {version}
+
+# 플러터 매니저 업그레이드 하기
+fvm flutter upgrade
+
+# 플러터 진단하기
+fvm flutter doctor -v
+
+# 플러터 동작하기
+fvm flutter run
+```
 
 ### fnm
 
