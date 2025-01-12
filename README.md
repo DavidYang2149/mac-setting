@@ -1,54 +1,6 @@
 # mac-setting
 
-## Homebrew
-
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Warning: /opt/homebrew/bin is not in your PATH 메세지가 나타나는 경우
-echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
-```
-
-### Homebrew 설정
-
-```sh
-brew install git
-brew install fnm
-brew install npm
-brew install neovim
-brew install gpg
-brew install gitmoji
-
-brew tap johngrib/homebrew-johngrib
-brew install fav
-
-brew install fzf
-
-brew install localtunnel
-# localtunnel 사용법 예시
-# lt --port 3000 --subdomain david
-
-# python 
-brew install pyenv
-
-brew install mongosh
-
-# node canvas 설치 방법
-npm install -g node-gyp
-brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
-
-# 이제 필요한 곳에서 하단 canvas를 설치할 수 있다
-# npm install canvas
-
-# Flutter Version Manager
-brew tap leoafarias/fvm
-brew install leoafarias/fvm/fvm
-
-# fvm 활성화
-dart pub global activate fvm
-```
-
-## iTerm2
+## 1. iTerm2
 
 [iTerm2](https://iterm2.com/) 다운로드
 
@@ -61,6 +13,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ### iTerm2 설정
 
 ```sh
+# 2. homebrew 설정을 먼저 할 것!
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 ```
@@ -68,6 +21,13 @@ brew install zsh-autosuggestions
 ### .zshrc
 
 ```sh
+# ... (중략)
+
+# 기존 ZSH_THEME="robbyrussell" 를 변경
+ZSH_THEME="agnoster"
+
+# ... (중략)
+
 # zsh Name Setting
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
@@ -81,12 +41,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # zsh autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # Homebrew PATH
 export PATH=/opt/homebrew/bin:$PATH
-
-# VSCode Setting - Command: code .
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # NEOVIM
 alias vi='nvim'
@@ -112,11 +68,8 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)"
 fi
 
-# fvm (Flutter Version Manager)
-export PATH="$PATH":"$HOME/fvm/default/bin"
-export PATH="$PATH":"$HOME/development/flutter/bin"
-export PATH="$PATH":"$HOME/bin/cache/dart-sdk/bin"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+# VSCode Setting - Command: code .
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 ```
 
 ### .oh-my-zsh/themes/agnoster.zsh-theme
@@ -167,30 +120,45 @@ brew install --cask font-jetbrains-mono
 
 폰트 설치 완료 후, iTerm2에서 설정 - Profiles - Text - Font - JetBrains Mono 변경
 
-### fvm
+## 2. Homebrew
 
 ```sh
-# 사용법
-# 현재 설치된 플러터 버전리스트 확인
-fvm list
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# 현재 사용중인 플러터 버전 확인
-fvm flutter --version
+# Warning: /opt/homebrew/bin is not in your PATH 메세지가 나타나는 경우
+echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshrc
+```
 
-# 플러터 버전 설치하기
-fvm install {version}
+### Homebrew 설정
 
-# 특정 버전 플러터 사용
-fvm use {version}
+```sh
+brew install git
+brew install gitmoji
 
-# 플러터 매니저 업그레이드 하기
-fvm flutter upgrade
+brew install npm
+brew install fnm
 
-# 플러터 진단하기
-fvm flutter doctor -v
+brew install gpg
+brew install neovim
 
-# 플러터 동작하기
-fvm flutter run
+brew tap johngrib/homebrew-johngrib
+brew install fav
+
+brew install fzf
+
+brew install localtunnel
+# localtunnel 사용법 예시
+# lt --port 3000 --subdomain david
+
+# python 
+brew install pyenv
+
+# node canvas 설치 방법
+# npm install -g node-gyp
+# brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
+
+# 이제 필요한 곳에서 하단 canvas를 설치할 수 있다
+# npm install canvas
 ```
 
 ### fnm
@@ -211,22 +179,6 @@ brew install neovim
 ```sh
 mkdir ~/.config/nvim
 touch ~/.config/nvim/init.vim
-```
-
-### spacevim
-
-설치 및 설정하기
-
-```sh
-curl -sLf https://spacevim.org/install.sh | bash
-# 설치 완료 후 vim 실행 & 에디터로 접속하면 플러그인을 자동 설치한다
-```
-
-에디터를 사용하면서 문제가 생길 경우 vi로 접속하여 다음을 실행해본다.
-
-```vi
-# vi 접속
-:checkhealth
 ```
 
 ### python
@@ -273,7 +225,7 @@ pyenv uninstall 3.10.8
 pyenv versions
 ```
 
-## Hammerspoon
+## 3. Hammerspoon
 
 Hammerspoon을 [설치](https://www.hammerspoon.org/)한다.
 
@@ -295,7 +247,7 @@ vi inputsource_aurora.lua
 
 추가로 한영 전환 설정은 [다음](https://www.philgineer.com/2021/01/m1-hammerspoon.html)을 참조한다.
 
-## Git
+## 4. Git
 
 ```sh
 # 선행조건
@@ -336,7 +288,7 @@ brew install gpg
 # ------------------
 ```
 
-## GPG
+## 5. GPG
 
 https://www.44bits.io/ko/post/add-signing-key-to-git-commit-by-gpg
 
