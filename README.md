@@ -114,7 +114,7 @@ Dracula.itermcolors 파일 클릭 후, iTerm2에서 설정 - Profiles - Colors -
 
 ### 폰트 설치
 ```sh
-brew tap homebrew/cask-fonts
+# brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono
 ```
 
@@ -145,6 +145,8 @@ brew tap johngrib/homebrew-johngrib
 brew install fav
 
 brew install fzf
+
+brew install docker
 
 brew install localtunnel
 # localtunnel 사용법 예시
@@ -177,8 +179,8 @@ brew install neovim
 상세 설정은 다음과 같다.
 
 ```sh
-mkdir ~/.config/nvim
-touch ~/.config/nvim/init.vim
+# mkdir ~/.config/nvim
+# touch ~/.config/nvim/init.vim
 ```
 
 ### python
@@ -239,6 +241,7 @@ vi init.lua
 mkdir modules
 # modules
 vi inputsource_aurora.lua
+vi foundation_remapping.lua
 
 # 혹은 하단 상세 설정을 참조
 ```
