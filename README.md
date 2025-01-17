@@ -146,6 +146,7 @@ brew install gitmoji
 
 brew install npm
 brew install fnm
+brew install pnpm
 
 brew install gpg
 brew install neovim
@@ -155,7 +156,7 @@ brew install fav
 
 brew install fzf
 
-brew install docker
+brew install --cask docker
 
 brew install localtunnel
 # localtunnel 사용법 예시
