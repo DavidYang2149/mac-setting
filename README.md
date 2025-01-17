@@ -156,7 +156,11 @@ brew install fav
 
 brew install fzf
 
-brew install --cask docker
+# Docker는 Mac의 경우, 어플리케이션으로 받아야 한다 / 애플실리콘 이슈
+# https://www.docker.com/
+# 설치 이후 Docker 설정이 필요하다
+# ~/.docker/config.json 접속 후 ->  The “credsStore” was “desktop” and changed it to “osxkeychain” 변경
+# brew install --cask docker
 
 brew install localtunnel
 # localtunnel 사용법 예시
