@@ -1,8 +1,15 @@
 # mac-setting
 
-## 1. iTerm2
+## 1. Ghostty
 
-[iTerm2](https://iterm2.com/) 다운로드
+[Ghostty](https://ghostty.org/) 다운로드
+
+OR
+
+```sh
+# homebrew 설정을 먼저 할 것!
+brew installl ghostty
+```
 
 ### oh my zsh 설치
 
@@ -10,10 +17,10 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### iTerm2 설정
+### 터미널 설정
 
 ```sh
-# 2. homebrew 설정을 먼저 할 것!
+# homebrew 설정을 먼저 할 것!
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 ```
@@ -106,8 +113,10 @@ prompt_newline() {
 ### 드라큘라 테마 설치
 
 ```sh
+# Ghostty 사용시 설정 건너 뛰기
+
 # downloads 폴더 위치
-git clone https://github.com/dracula/iterm.git
+# git clone https://github.com/dracula/iterm.git
 ```
 
 Dracula.itermcolors 파일 클릭 후, iTerm2에서 설정 - Profiles - Colors - Dracula 변경
